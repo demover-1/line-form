@@ -22,8 +22,8 @@
     </label><br />
     <input type="tel" id="phone" name="phone" pattern="[0-9\-]+" required /><br /><br />
 
-    <!-- userId用のhiddenフィールド -->
-    <input type="hidden" id="userId" name="userId" value="" />
+    <!-- userid用のhiddenフィールド -->
+    <input type="hidden" id="userid" name="userid" value="" />
 
     <button type="submit">送信</button>
   </form>
@@ -31,9 +31,9 @@
   <script>
     window.onload = function() {
       const params = new URLSearchParams(window.location.search);
-      const userId = params.get("userId");
-      if (userId) {
-        document.getElementById("userId").value = userId;
+      const userId = params.get("userid");
+      if (userid) {
+        document.getElementByid("userid").value = userid;
       }
     };
   </script>
